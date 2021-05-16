@@ -1,6 +1,11 @@
 /*палитра
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --title-text-color: #212121;
   --acsent-color: #2196f3;
@@ -11,12 +16,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-/*Верхняя линия*/
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  outline: 1px solid #e02525;
+}
+/*Верхняя линия логотип*/
 .logo {
   color: var(--acsent-color);
   font-family: 'Raleway', sans-serif;
@@ -31,7 +45,22 @@ body {
 .logo-upline {
   color: #000000;
 }
+/*Верхняя линия навигация*/
+.upline-nav-list {
+  display: flex;
+}
+.upline-nav-list,
+.nav-item + .nav-item {
+  margin-left: 50px;
+}
+.upline-nav-list li,
+.upline-contacts li {
+  outline: 1px solid #3d3131;
+}
 .nav-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -46,6 +75,14 @@ body {
 .list .link.current {
   color: var(--acsent-color);
 }
+/*Верхняя линия контакты*/
+.upline-contacts {
+  display: flex;
+}
+.upline-contacts,
+.contacts + .contacts {
+  margin-left: 50px;
+}
 .contacts {
   font-weight: 500;
   font-size: 14px;
@@ -58,8 +95,14 @@ body {
   color: var(--acsent-color);
 }
 /* Эффективные решения для вашего бизнеса */
-.main-section {
+.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: #2f303a;
+  text-align: center;
+}
+.main-section {
+  text-align: center;
 }
 .header-main {
   font-weight: 900;
@@ -71,6 +114,9 @@ body {
 }
 /* Шапка */
 .header-main-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -89,7 +135,13 @@ body {
   background: var(--acsent-color);
 }
 /* Особенности */
+.specificsh-list {
+  margin-bottom: 94px;
+  margin-top: 94px;
+}
 .specificsh {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -98,6 +150,8 @@ body {
   text-transform: uppercase;
 }
 .specifics-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -105,11 +159,18 @@ body {
 }
 /*Чем мы занимаемся*/
 .working {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.working-list {
+  margin-bottom: 94px;
 }
 .name {
   font-weight: 500;

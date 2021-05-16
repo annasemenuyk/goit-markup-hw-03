@@ -319,9 +319,6 @@ p {
 .our-work .item {
   margin-right: 30px;
   margin-bottom: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 .our-work .item:nth-child(3n) {
   margin-right: 0;
@@ -332,6 +329,9 @@ p {
 
 .projekts {
   margin: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 .name-images {
   display: block;

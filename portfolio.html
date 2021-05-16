@@ -17,42 +17,44 @@
 <body>
   <!--Верхняя линия-->
   <header class="upline">
-    <nav class="nav">
-      <a class="logo link" href="./index.html">Web<span class="logo-upline">Studio</span></a>
-      <ul class="list">
-        <li class="nav-item list">
-          <a class="nav-item link" href="index.html">Студия</a>
+    <div class="container upline-main">
+      <nav class="upline-main-nav">
+        <a class="logo link" href="./index.html">Web<span class="logo-upline">Studio</span></a>
+        <ul class="upline-nav-list list">
+          <li class="nav-item list">
+            <a class="nav-item link" href="index.html">Студия</a>
+          </li>
+          <li class="nav-item list">
+            <a class="nav-item link current" href="">Портфолио</a>
+          </li>
+          <li class="nav-item list">
+            <a class="nav-item link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="upline-contacts list">
+        <li class="item">
+          <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="nav-item list">
-          <a class="nav-item link current" href="">Портфолио</a>
-        </li>
-        <li class="nav-item list">
-          <a class="nav-item link" href="">Контакты</a>
+        <li class="item">
+          <a class="contacts link" href="tel:380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
-    </nav>
-    <ul class="list">
-      <li>
-        <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </li>
-      <li>
-        <a class="contacts link" href="tel:380961111111">+38 096 111 11 11</a>
-      </li>
-    </ul>
+    </div>
   </header>
   <main>
     <!--Прихований заголоаок-->
-    <h1 class="hidden">Портфоліо</h1>
-    <h2 class="hidden">Фільтр по сторінці</h2>
-    <ul class="list">
+    <h1 hidden>Портфоліо</h1>
+    <h2 hidden>Фільтр по сторінці</h2>
+    <ul class="list container">
       <li> <button class="filters" type="button">Все</button> </li>
       <li> <button class="filters" type="button">Веб-сайты</button> </li>
       <li> <button class="filters" type="button">Приложения</button> </li>
       <li> <button class="filters" type="button">Дизайн</button> </li>
       <li> <button class="filters" type="button">Маркетинг</button> </li>
     </ul>
-    <h2 class="hidden">Наші роботи</h2>
-    <ul class="list">
+    <h2 hidden>Наші роботи</h2>
+    <ul class="list container">
       <li> <img src="./images/portfolio/img1.jpg" alt="Технокряк" width="370" height="294">
         <h3 class="name-images">Технокряк</h3>
         <p class="name-kindofworks">Веб-сайт</p>
@@ -93,14 +95,19 @@
   </main>
   <!--Подвал страницы-->
   <footer class="footer-contacts">
-    <a class="logo link" href="./index.html">Web<span class="logo-down-next">Studio</span></a>
-    <address>
-      <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-      <ul class="list">
-        <li><a class="contacts-down" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contacts-down" href="tel:380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </address>
+    <div class="container"><a class="logo link" href="./index.html">Web<span class="logo-down-next">Studio</span></a>
+      <address>
+        <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+        <ul class="list">
+          <li>
+            <a class="contacts-down" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="contacts-down" href="tel:380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
   </footer>
 </body>
 

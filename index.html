@@ -17,11 +17,9 @@
 <body>
   <!--Верхняя линия-->
   <header class="upline">
-    <div class="container">
-      <nav>
-        <div class="upline-nav">
-          <a class="logo link" href="./index.html">Web<span class="logo-upline">Studio</span></a>
-        </div>
+    <div class="container upline-main">
+      <nav class="upline-main-nav">
+        <a class="logo link" href="./index.html">Web<span class="logo-upline">Studio</span></a>
         <ul class="upline-nav-list list">
           <li class="nav-item list">
             <a class="nav-item link current" href="">Студия</a>
@@ -35,10 +33,10 @@
         </ul>
       </nav>
       <ul class="upline-contacts list">
-        <li>
+        <li class="item">
           <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li>
+        <li class="item">
           <a class="contacts link" href="tel:380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -58,28 +56,26 @@
       <!--невидимый заголовок-->
       <h2 hidden>Особенности</h2>
       <ul class="specificsh-list list container">
-        <li>
+        <li class="item">
           <h3 class="specificsh">Внимание к деталям</h3>
           <p class="specifics-text">
             Идейные соображения, а также начало повседневной работы по
             формированию позиции.
           </p>
         </li>
-        <li>
+        <li class="item">
           <h3 class="specificsh">Пунктуальность</h3>
-          <p class="specifics-text">
-            Задача организации, в особенности же рамки и место обучения кадров
-            влечет за собой.
-          </p>
+          <p class="specifics-text">Задача организации, в особенности же рамки и место обучения кадров
+            влечет за собой.</p>
         </li>
-        <li>
+        <li class="item">
           <h3 class="specificsh">Планирование</h3>
           <p class="specifics-text">
             Равным образом консультация с широким активом в значительной
             степени обуславливает.
           </p>
         </li>
-        <li>
+        <li class="item">
           <h3 class="specificsh">Современные технологии</h3>
           <p class="specifics-text">
             Значимость этих проблем настолько очевидна, что реализация
@@ -91,35 +87,43 @@
     <!--Чем мы занимаемся-->
     <section class="container">
       <h2 class="working">Чем мы занимаемся</h2>
-      <ul class="list">
-        <li><img src="./images/box1.jpg" alt="картинка 1" width="370" /></li>
-        <li><img src="./images/box2.jpg" alt="картинка 2" width="370" /></li>
-        <li><img src="./images/box3.jpg" alt="картинка 3" width="370" /></li>
+      <ul class="working-list list">
+        <li class="item"><img src="./images/box1.jpg" alt="картинка 1" width="370" /></li>
+        <li class="item"><img src="./images/box2.jpg" alt="картинка 2" width="370" /></li>
+        <li class="item"><img src="./images/box3.jpg" alt="картинка 3" width="370" /></li>
       </ul>
     </section>
     <!--Наша команда-->
     <section>
       <h2 class="working">Наша команда</h2>
       <ul class="working-list list container">
-        <li>
-          <img src="./images/id.jpg" alt="Игорь Демьяненко" width="270" />
-          <h3 class="name">Игорь Демьяненко</h3>
-          <p class="profession" lang="en">Product Designer</p>
+        <li class="item">
+          <div class="workers">
+            <img src="./images/id.jpg" alt="Игорь Демьяненко" width="270" />
+            <h3 class="name">Игорь Демьяненко</h3>
+            <p class="profession" lang="en">Product Designer</p>
+          </div>
         </li>
-        <li>
-          <img src="./images/or.jpg" alt="Ольга Репина" width="270" />
-          <h3 class="name">Ольга Репина</h3>
-          <p class="profession" lang="en">Frontend Developer</p>
+        <li class="item">
+          <div class="workers">
+            <img src="./images/or.jpg" alt="Ольга Репина" width="270" />
+            <h3 class="name">Ольга Репина</h3>
+            <p class="profession" lang="en">Frontend Developer</p>
+          </div>
         </li>
-        <li>
-          <img src="./images/nt.jpg" alt="Николай Тарасов" width="270" />
-          <h3 class="name">Николай Тарасов</h3>
-          <p class="profession" lang="en">Marketing</p>
+        <li class="item">
+          <div class="workers">
+            <img src="./images/nt.jpg" alt="Николай Тарасов" width="270" />
+            <h3 class="name">Николай Тарасов</h3>
+            <p class="profession" lang="en">Marketing</p>
+          </div>
         </li>
-        <li>
-          <img src="./images/me.jpg" alt="Михаил Ермаков" width="270" />
-          <h3 class="name">Михаил Ермаков</h3>
-          <p class="profession" lang="en">UI Designer</p>
+        <li class="item">
+          <div class="workers">
+            <img src="./images/me.jpg" alt="Михаил Ермаков" width="270" />
+            <h3 class="name">Михаил Ермаков</h3>
+            <p class="profession" lang="en">UI Designer</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -139,7 +143,6 @@
         </ul>
       </address>
     </div>
-
   </footer>
 </body>
 

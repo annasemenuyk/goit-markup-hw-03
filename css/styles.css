@@ -71,8 +71,6 @@ p {
 }
 .nav-item {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -317,6 +315,9 @@ p {
 }*/
 .our-work > img {
   display: block;
+}
+.portfolio-page {
+  margin-top: 94px;
 }
 .filters-page {
   display: flex;

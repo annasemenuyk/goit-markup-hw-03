@@ -29,13 +29,18 @@ p {
   padding: 0;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /*Верхняя линия логотип*/
+.upline {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px;
+}
 .upline-main,
 .upline-main-nav {
   display: flex;
@@ -62,7 +67,7 @@ p {
 }
 .upline-nav-list,
 .nav-item + .nav-item {
-  margin-left: 50px;
+  margin-left: 93px;
 }
 .nav-item {
   display: block;
@@ -103,7 +108,6 @@ p {
 }
 /* Эффективные решения для вашего бизнеса */
 .section {
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
   background: #2f303a;
@@ -119,6 +123,9 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-acsent-color);
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 /* Шапка */
 .header-main-button {
@@ -143,15 +150,16 @@ p {
   background: var(--acsent-color);
 }
 /* Особенности */
+.specificsh-main {
+  padding-top: 94px;
+}
 .specificsh-list {
   margin-bottom: 94px;
   display: flex;
 }
 .specificsh-list .item {
-  display: flex;
   flex-wrap: wrap;
   margin-left: 30px;
-  width: 1170px;
 }
 .specificsh-list .item:first-child {
   margin-left: 0;
@@ -172,13 +180,43 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 270px;
   color: var(--secondary-color);
 }
 /*Чем мы занимаемся*/
+.working-kind-list > img {
+  display: block;
+}
+.working-kind-list {
+  display: flex;
+}
+.working-kind-list .item {
+  margin-left: 30px;
+  margin-bottom: 94px;
+}
+.working-kind-list .item:first-child {
+  margin-left: 0;
+}
+.working-kind {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/*Наша команда*/
+.working-list > img {
+  display: block;
+}
 .working-list {
   display: flex;
   margin-bottom: 94px;
+}
+.workers {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .working-list .item {
   flex-wrap: nowrap;
@@ -190,11 +228,8 @@ p {
 .working-list .item:first-child {
   margin-left: 0;
 }
-.workers {
-  display: block;
-}
 .working {
-  margin-top: 0;
+  padding-top: 94px;
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -204,8 +239,6 @@ p {
   color: var(--title-text-color);
 }
 .name {
-  margin-top: 30px;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -214,7 +247,6 @@ p {
   text-align: center;
 }
 .profession {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -224,12 +256,14 @@ p {
 /*Подвал страницы*/
 .footer-contacts {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-contacts-outline {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo {
+.footer-contacts-outline .logo {
   padding: 0;
   margin-top: 0;
   margin-bottom: 20px;
